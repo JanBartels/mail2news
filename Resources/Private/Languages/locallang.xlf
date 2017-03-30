@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file t3:id="1415814893" source-language="en" datatype="plaintext" original="messages" date="2017-03-28T20:22:34Z" product-name="mail2news">
+		<header/>
+		<body>
+			<trans-unit id="tasks.getmail.name" xml:space="preserve">
+				<source>Mail-to-news Importer</source>
+			</trans-unit>
+			<trans-unit id="tasks.getmail.description" xml:space="preserve">
+				<source>Imports email messages to news articles using the mail2news extension. </source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

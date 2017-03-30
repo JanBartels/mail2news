@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file t3:id="1415814893" source-language="en" datatype="plaintext" original="messages" date="2017-03-28T20:22:34Z" product-name="mail2news">
+		<header/>
+		<body>
+			<trans-unit id="tx_mail2news_importer" xml:space="preserve">
+				<source>Mail-to-news importer</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.title" xml:space="preserve">
+				<source>Mail importer title</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.allowed_senders" xml:space="preserve">
+				<source>Allowed senders</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.override_sections.I.0" xml:space="preserve">
+				<source>all parameters</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.override_sections.I.1" xml:space="preserve">
+				<source>mailbox parameters only</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.override_sections.I.2" xml:space="preserve">
+				<source>processing parameters only</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.override_sections.I.3" xml:space="preserve">
+				<source>record parameters only</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.override_sections.I.4" xml:space="preserve">
+				<source>mailbox and processing parameters</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.override_sections.I.5" xml:space="preserve">
+				<source>mailbox and record parameters</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.override_sections.I.6" xml:space="preserve">
+				<source>processing and record parameters</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.override_sections.I.7" xml:space="preserve">
+				<source>none</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.override_sections" xml:space="preserve">
+				<source>Select which defaults to override for this importer</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.tabs.general" xml:space="preserve">
+				<source>General</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.tabs.mailbox" xml:space="preserve">
+				<source>Mailbox</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.tabs.processing" xml:space="preserve">
+				<source>Processing</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.tabs.record" xml:space="preserve">
+				<source>Record</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.tabs.extended" xml:space="preserve">
+				<source>Extended</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.mail_server" xml:space="preserve">
+				<source>Servername for POP3 or IMAP mailserver to fetch email from</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.mail_username" xml:space="preserve">
+				<source>Username for mailserver</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.mail_password" xml:space="preserve">
+				<source>Password for mailserver</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.imap.I.0" xml:space="preserve">
+				<source>POP3</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.imap.I.1" xml:space="preserve">
+				<source>IMAP</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.imap" xml:space="preserve">
+				<source>Email protocol</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.use_ssl" xml:space="preserve">
+				<source>Mailserver uses SSL</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.self_signed_certificate" xml:space="preserve">
+				<source>Allow self-signed SSL-certificate</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.portno" xml:space="preserve">
+				<source>Port number for mailserver</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.delete_after_download" xml:space="preserve">
+				<source>Delete after processing</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.delete_rejected_mail" xml:space="preserve">
+				<source>Also delete rejected messages</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.concatenate_text_parts" xml:space="preserve">
+				<source>Concatenate text parts</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.max_image_size" xml:space="preserve">
+				<source>Maximum image size in kb</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.max_attachment_size" xml:space="preserve">
+				<source>Maximum attachment size in kb</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.imageextensions" xml:space="preserve">
+				<source>Allowed file extensions for images</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.attachmentextensions" xml:space="preserve">
+				<source>Allowed extensions other attachments</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.record_type" xml:space="preserve">
+				<source>What type of records should be created? (options depend on installed extensions)</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.record_type.I.1" xml:space="preserve">
+				<source>News records (ext tt_news)</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.record_type.I.2" xml:space="preserve">
+				<source>Blog records (ext t3blog)</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.category_identifier" xml:space="preserve">
+				<source>Category line identifier</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.subheader_identifier" xml:space="preserve">
+				<source>Subheader line identifier</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.default_category" xml:space="preserve">
+				<source>Default ttnews categories (only affects ttnews records)</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.default_t3blog_category" xml:space="preserve">
+				<source>Default t3blog categories (only affects t3blog records)</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.news_cruser_id" xml:space="preserve">
+				<source>Backend user ID</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.hide_by_default" xml:space="preserve">
+				<source>Hide new records by default</source>
+			</trans-unit>
+			<trans-unit id="tx_mail2news_importer.clearcachecmd" xml:space="preserve">
+				<source>Clear cache of these pages</source>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

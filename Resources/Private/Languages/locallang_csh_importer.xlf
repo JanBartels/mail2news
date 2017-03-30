@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file t3:id="1415814893" source-language="en" datatype="plaintext" original="messages" date="2017-03-28T20:22:34Z" product-name="mail2news">
+		<header/>
+		<body>
+			<trans-unit id=".description" xml:space="preserve">
+				<source>Configuration options for mail-to-news importers</source>
+			</trans-unit>
+			<trans-unit id="allowed_senders.description" xml:space="preserve">
+				<source>Enter allowed from-email-addresses or part of the email addresses, comma separated. '@' allowes all email addresses.</source>
+			</trans-unit>
+			<trans-unit id="title.description" xml:space="preserve">
+				<source>This field has no function except for yourself, to identify this record.</source>
+			</trans-unit>
+			<trans-unit id="override_sections.description" xml:space="preserve">
+				<source>The default settings are set in the Extension Manager. Here you can choose which fields you want to change for this specific importer</source>
+			</trans-unit>
+			<trans-unit id="use_ssl.description" xml:space="preserve">
+				<source>Enable only if your mailserver supports this</source>
+			</trans-unit>
+			<trans-unit id="self_signed_certificate.description" xml:space="preserve">
+				<source>If your mailserver uses a self-signed SSL certificate you can allow this here</source>
+			</trans-unit>
+			<trans-unit id="portno.description" xml:space="preserve">
+				<source>Leave 0 or empty to use defaults</source>
+			</trans-unit>
+			<trans-unit id="delete_after_download.description" xml:space="preserve">
+				<source>Delete messages from email account after they are succesfully processed</source>
+			</trans-unit>
+			<trans-unit id="delete_rejected_mail.description" xml:space="preserve">
+				<source>Also delete messages that where rejected because of sender not in allowed senders or other reason. Do not use this on a shared email account!</source>
+			</trans-unit>
+			<trans-unit id="concatenate_text_parts.description" xml:space="preserve">
+				<source>In the default setting only the first text part is imported, which skips separate signature parts. Check this box to import and concatenate all text parts of multi-part messages.</source>
+			</trans-unit>
+			<trans-unit id="imageextensions.description" xml:space="preserve">
+				<source>Comma separated list of image extensions, like png,jpg,gif. Files with extensions used here will be filtered to news images and will NOT end up at the news file attachments.</source>
+			</trans-unit>
+			<trans-unit id="attachmentextensions.description" xml:space="preserve">
+				<source>Comma separated list of file extensions, like pdf,odt,doc, etc.</source>
+			</trans-unit>
+			<trans-unit id="record_type.description" xml:space="preserve">
+				<source>Mail2news can create news and blog records for the extensions tt_news and t3blog. You can only choose the options for which the extensions are installed (tt_news or t3blog)</source>
+			</trans-unit>
+			<trans-unit id="default_category.description" xml:space="preserve">
+				<source>Title or ID of default ttnews category for news items created by this extension, used if no (valid) category has been set in email message.</source>
+			</trans-unit>
+			<trans-unit id="default_t3blog_category.description" xml:space="preserve">
+				<source>Title or ID of default t3blog category for blog items created by this extension, used if no (valid) category has been set in email message.</source>
+			</trans-unit>
+			<trans-unit id="news_cruser_id.description" xml:space="preserve">
+				<source>ID of the backend user to whom the created records will be assigned.</source>
+			</trans-unit>
+			<trans-unit id="hide_by_default.description" xml:space="preserve">
+				<source>If checked, new records will only show on the website after a backend user unhides them.</source>
+			</trans-unit>
+			<trans-unit id="clearcachecmd.description" xml:space="preserve">
+				<source>Comma separated list of page IDs where the created content will be shown, of which the cache should be cleared for the new items to be shown.</source>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

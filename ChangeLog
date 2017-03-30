@@ -1,0 +1,121 @@
+12-06-29 Loek Hilgersom  <typo3extensions@netcoop.nl>
+
+	* Version 2.0.3 stable
+	* Fix issue #34508: categories are now assigned correctly again from importer records
+	* Fixed table misspelling (tx_t3blog_post_cat should be tx_t3blog_cat)
+	* Checked compatibiltiy with TYPO3 4.7, tt_news 3.2 and t3blog 1.2
+	* Minor update manual
+
+12-06-26 Loek Hilgersom  <typo3extensions@netcoop.nl>
+
+	* Version 2.0.2 stable
+	* Fix issue 30860: commas in filenames
+
+11-12-30 Loek Hilgersom  <typo3extensions@netcoop.nl>
+
+	* Version 2.0.1 stable
+	* Fix issue 32865: Category names are not recognized
+	* Fix issue 32875: Compatibility with TYPO3 v4.6.x (also tested on 4.7-dev)
+
+11-10-05 Loek Hilgersom  <typo3extensions@netcoop.nl>
+
+	* Version 2.0.0 beta
+	* Major new features: Now also import email messages into T3BLOG!
+	* Very flexible fieldMarkers feature for setting values in any custom database field (see manual)
+	* support for adding multiple categories (tt_news or t3blog) to an imported item
+	* transformation of readable date fields to tstamps
+
+11-07-16 Loek Hilgersom  <typo3extensions@netcoop.nl>
+
+	* Version 1.9.9 stable
+	* mail2news is now compatible with TYPO3 v4.5.x (ClearCache method was broken due to changes in TYPO3 core)
+	* Improved category recognition & input sanitation
+	* Updated manual
+	* This will be the last version of this 1.x.x branch, a new version will be released later which may require some configuration changes!
+
+10-09-09 Loek Hilgersom  <typo3extensions@netcoop.nl>
+
+	* Version 1.9.8 beta
+	* 8054/8806: Fallback to emConf not working when there are no mail2news configuration records
+
+10-05-18 Loek Hilgersom  <typo3extensions@netcoop.nl>
+
+	* Version 1.9.7 beta
+	* Now supports multiple configurations using tx_mail2news_importer records (allowing use in multi-site installations, etc.)
+	* Added scheduler support
+	* Reference index is now properly updated after database inserts
+	* Now logs to sys_log table
+	* Improved error handling (write to sys_log and continue)
+	* Optional DB inserts using TCEmain (includes full permissions, history, etc.)
+	* Added automatic link recognition in plain text body for urls and email addresses
+
+10-05-06 Loek Hilgersom  <typo3extensions@netcoop.nl>
+
+	* Version 1.9.6 beta
+	* Now uses API methods for storing images and attachments
+	* No more random number prepended to filenames, if file exists, it gets
+	prepended with _1, _2, etc. (issue 7678)
+	* Fixed bug 7680, dealing with special chars in filenames. Filenames
+	have to be converted t3lib_cs::specCharsToASCII for ImageMagick to
+	handle them
+	* Fixed bug 3783, better formatting/improved html markup of bodytext (now
+	preserves br-tags for linebreaks, inserts p-tags at empty lines and removes
+	whitespace on empty lines (spc, &nbsp;, or tabs)
+
+10-04-29 Loek Hilgersom  <typo3extensions@netcoop.nl>
+
+	* Fixed bug characterset conversion on a UTF-8 TYPO3 setup:
+	http://forge.typo3.org/issues/show/6678
+	* Applied source formatting and improved code comments using extdeveval
+
+10-04-23 Loek Hilgersom  <typo3extensions@netcoop.nl>
+
+	* Added file ext_localconf.php with automatic cli_key registration
+	
+09-03-06 Loek Hilgersom  <typo3extensions@netcoop.nl>
+
+	* Version 1.9.4 beta
+	* Added MIME-header decoding and character set conversion for
+	image and attachment filenames
+
+09-02-25 Loek Hilgersom  <typo3extensions@netcoop.nl>
+
+	* Version 1.9.3 beta
+	* Added option to choose news category and subheader/short in messages
+	* News category setting in EM has become 'default category' now
+	* Category input can be both category title or id
+	* Nicer log file output
+
+09-02-20 Loek Hilgersom  <typo3extensions@netcoop.nl>
+
+	* Version 1.9.2 beta
+	* Cron script now uses TYPO3's cli_dispatch script to execute the cronjob in
+	the context of TYPO3
+	* Fixed characterset conversion issue with subject-line
+
+09-02-16 Loek Hilgersom  <typo3extensions@netcoop.nl>
+
+	* Version 1.9.1 alpha
+	* Completely rewritten, now object oriented code, better structured,
+	maintainable and extendible
+	* Added features:
+	* Now also handles images other than jpg
+	* Attached files other than images are saved to tt_news field NEWS_FILES
+	* Separate max file size settings for images and attachments 
+	* Improved processing of multi-part messages, including nested multi-part
+	* Added character set conversion with separate character set recognition for
+	header and each part of multi-part message
+	* Optionally glues/concatenates all text parts of multipart message together
+	* Extended mail server configuration, POP3/IMAP, SSL option and port setting
+
+08-10-06
+
+	* Version 1.1.0 beta
+	* Added clearCacheCmd for clearing cache of specified pages after new imports
+	* Added extension icon
+
+08-10-01 Loek Hilgersom  <typo3extensions@netcoop.nl>
+
+	* Initial release v1.0.0 beta
+	* Support multiple images per message
+	* Blocks unallowed script access through HTTP (only shell/cron access allowed)
